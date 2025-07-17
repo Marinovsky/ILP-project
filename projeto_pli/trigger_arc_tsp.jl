@@ -42,8 +42,8 @@ function main()
 
 	 TriggerArcTSP_lb_lp(T, 100)
 	 WriteLogFile(T,"lb_lp")
-	 println("========== LB Lagrangean Relaxation==============")
-	 TriggerArcTSP_lb_rlxlag(T, 10)
+
+	 TriggerArcTSP_lb_rlxlag(T, 100)
 	 WriteLogFile(T,"lb_rlxlag")
 	 
 	 TriggerArcTSP_lb_colgen(T)
@@ -58,7 +58,7 @@ function main()
 	 TriggerArcTSP_ub_colgen(T)
 	 WriteLogFile(T,"ub_colgen")
 	 
-	 TriggerArcTSP_ilp(T)
+	 TriggerArcTSP_ilp(T, 100)
 	 WriteLogFile(T,"ilp")
 end
 
